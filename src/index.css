@@ -1,0 +1,78 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --Moderateviolet: hsl(263, 55%, 52%);
+  --Verydarkgrayishblue: hsl(217, 19%, 35%);
+  --Verydarkblackishblue: hsl(219, 29%, 14%);
+  --White: hsl(0, 0%, 100%);
+
+  --Lightgray: hsl(0, 0%, 81%);
+  --Lightgrayishblue: hsl(210, 46%, 95%);
+
+  --Fontsize: 13px;
+  --Weights500: 500;
+  --Weights600: 600;
+
+  
+
+  /* Metin renklerine ilişkin not:
+
+1. "Verified Graduate" ifadesi, kişinin adıyla aynı renktedir ve %50 opaklığa sahiptir
+2. Alıntıların içindeki inceleme paragrafları da aynı renktedir ancak %70 opaklığa sahiptir */
+}
+body {
+  font-family: "Barlow Semi Condensed", sans-serif;
+  font-size: var(--Fontsize);
+}
+
+.card1 {
+  /* background-color: var(--Moderateviolet); */
+  
+}
+
+.card3 , .card4{
+ color: var(--Verydarkgrayishblue);
+}
+
+
+.card {
+  border-radius: 0.6rem;
+  
+}
+p {
+  opacity: 0.7;
+  font-size: 11px;
+}
+img {
+  border-radius: 1.5rem;
+  height: 2rem;
+}
+h2 {
+  font-weight: 500;
+}
+
+@media (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(5, auto);
+    gap: 2rem;
+    width: 90%;
+    margin: 2rem 0;
+  }
+
+  .card1,
+  .card2,
+  .card3,
+  .card4,
+  .card5 {
+    grid-column: 1 / 2;
+    grid-row: auto;
+  }
+
+  .card3 {
+  
+    grid-row: 5 / 6;
+  }
+}
