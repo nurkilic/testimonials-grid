@@ -3,6 +3,8 @@ import imgjonathan from "./assets/images/image-jonathan.jpg";
 import imgkira from "./assets/images/image-kira.jpg";
 import imgjeanette from "./assets/images/image-jeanette.jpg";
 import imgpatrick from "./assets/images/image-patrick.jpg";
+import imgquotation from "./assets/images/bg-pattern-quotation.svg";
+import "./App.css";
 
 import Card from "./components/Card";
 
@@ -13,7 +15,7 @@ function App() {
       name: "Daniel Clifford",
       header:
         "I received a job offer mid-course, and the subjects I learned were current, if not more so, in the company I joined. I honestly feel I got every penny’s worth.",
-      text: "“ I was an EMT for many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”",
+      text: "“ I was an EMT fory many years before I joined the bootcamp. I’ve been looking to make a transition and have heard some people who had an amazing experience here. I signed up for the free intro course and found it incredibly fun! I enrolled shortly thereafter. The next 12 weeks was the best - and most grueling - time of my life. Since completing the course, I’ve successfully switched careers, working as a Software Engineer at a VR startup. ”",
     },
     {
       img: imgjonathan,
@@ -48,8 +50,8 @@ function App() {
       <div className="container grid grid-cols-4 grid-rows-2 gap-4 rounded-lg  w-[70%] max-xl:w-[85%]  max-lg:my-20 ">
         <div
           className="card1 card col-start-1 col-end-3 row-start-1 row-end-2 bg-[var(--Moderateviolet)] shadow-lg text-white py-6 px-8 
-          "
-        >
+          relative"
+        > <img src={imgquotation} alt="" className="rounded-none absolute top-0  right-14 h-[6.3rem] " />
           <Card
             img={CardItems[0].img}
             name={CardItems[0].name}

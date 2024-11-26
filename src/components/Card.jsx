@@ -1,6 +1,6 @@
 const Card = ({ img, name, header, text }) => {
   return (
-    <div>
+    <div className="relative">
       <div className="flex gap-4 mb-4">
         <img src={img} />
         <div className="">
@@ -8,7 +8,7 @@ const Card = ({ img, name, header, text }) => {
           <h3 className=" text-[10px] opacity-50">Verified Graduate</h3>
         </div>
       </div>
-      <h2 className="text-base font-semibold mb-4">{header}</h2>
+      <h2 className="text-base font-semibold mb-4 z-[-10]">{header}</h2>
       <p>{text}</p>
     </div>
   );
