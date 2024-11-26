@@ -7,39 +7,22 @@
   --Verydarkgrayishblue: hsl(217, 19%, 35%);
   --Verydarkblackishblue: hsl(219, 29%, 14%);
   --White: hsl(0, 0%, 100%);
-
   --Lightgray: hsl(0, 0%, 81%);
   --Lightgrayishblue: hsl(210, 46%, 95%);
-
   --Fontsize: 13px;
-  --Weights500: 500;
-  --Weights600: 600;
-
-  
-
-  /* Metin renklerine ilişkin not:
-
-1. "Verified Graduate" ifadesi, kişinin adıyla aynı renktedir ve %50 opaklığa sahiptir
-2. Alıntıların içindeki inceleme paragrafları da aynı renktedir ancak %70 opaklığa sahiptir */
 }
 body {
   font-family: "Barlow Semi Condensed", sans-serif;
   font-size: var(--Fontsize);
 }
 
-.card1 {
-  /* background-color: var(--Moderateviolet); */
-  
+.card3,
+.card4 {
+  color: var(--Verydarkgrayishblue);
 }
-
-.card3 , .card4{
- color: var(--Verydarkgrayishblue);
-}
-
 
 .card {
   border-radius: 0.6rem;
-  
 }
 p {
   opacity: 0.7;
@@ -72,7 +55,6 @@ h2 {
   }
 
   .card3 {
-  
     grid-row: 5 / 6;
   }
 }

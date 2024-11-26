@@ -3,7 +3,7 @@ import imgjonathan from "./assets/images/image-jonathan.jpg";
 import imgkira from "./assets/images/image-kira.jpg";
 import imgjeanette from "./assets/images/image-jeanette.jpg";
 import imgpatrick from "./assets/images/image-patrick.jpg";
-import "./App.css";
+
 import Card from "./components/Card";
 
 function App() {
